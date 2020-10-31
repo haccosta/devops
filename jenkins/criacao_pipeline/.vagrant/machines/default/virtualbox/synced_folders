@@ -1,0 +1,1 @@
+{"virtualbox":{"/configs":{"guestpath":"/configs","hostpath":"/home/handerson/repositorioGitHub/devops/jenkins/criacao_pipeline/configs","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/handerson/repositorioGitHub/devops/jenkins/criacao_pipeline","disabled":false,"__vagrantfile":true}}}
