@@ -1,0 +1,10 @@
+---
+- name: Instalar vsftpd no ftpserver
+  hosts: all
+  become: yes
+  tasks:
+    - name: Instalar servidor FTP quando host fizer parte do grupo ftpserver
+      apt:
+        name: vsftpd
+        state: latest
+      when: inventory_hostname in groups["ftpserver"]

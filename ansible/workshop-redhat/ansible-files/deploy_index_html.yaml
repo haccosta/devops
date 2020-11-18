@@ -1,0 +1,9 @@
+---
+- name: Copia index.html
+  hosts: web
+  become: yes
+  tasks:
+  - name: Copia index.html
+    copy:
+      src: /home/handerson/repositorioGitHub/devops/ansible/workshop-redhat/ansible-files/{{stage}}_index.html
+      dest: /var/www/html/index.html

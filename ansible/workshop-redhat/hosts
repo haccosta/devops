@@ -1,0 +1,15 @@
+[all:vars]
+ansible_user=vagrant
+ansible_ssh_pass=vagrant
+ansible_port=22
+
+[web]
+node1 ansible_host=172.17.177.40
+node2 ansible_host=172.17.177.42
+node3 ansible_host=172.17.177.44
+
+[ftpserver]
+node2 ansible_host=172.17.177.42
+
+[control]
+ansible ansible_host=127.0.0.1
